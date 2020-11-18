@@ -7,6 +7,8 @@ const { ipfsPathHelp } = require('../utils')
 const { isTest } = require('ipfs-utils/src/env')
 const debug = require('debug')('ipfs:cli:daemon')
 
+const agent = require('/ctx/DeathStarGame/bin/peernode/resources/out/main.js')
+
 module.exports = {
   command: 'daemon',
 
@@ -103,6 +105,8 @@ module.exports = {
     }
 
     print('Daemon is ready')
+    agent.main(daemon)
+
 
     const cleanup = async () => {
       print('Received interrupt signal, shutting down...')
