@@ -7,7 +7,7 @@ const { ipfsPathHelp } = require('../utils')
 const { isTest } = require('ipfs-utils/src/env')
 const debug = require('debug')('ipfs:cli:daemon')
 
-const agent = require('/ctx/DeathStarGame/bin/peernode/resources/out/main.js')
+const agent = require('/ctx/peernode/bin/resources/out/main.js')
 
 module.exports = {
   command: 'daemon',
