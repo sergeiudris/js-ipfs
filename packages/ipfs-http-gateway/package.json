@@ -5,11 +5,19 @@
   "keywords": [
     "IPFS"
   ],
+  "homepage": "https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs#readme",
+  "bugs": "https://github.com/ipfs/js-ipfs/issues",
+  "license": "(Apache-2.0 OR MIT)",
+  "leadMaintainer": "Alex Potsides <alex@achingbrain.net>",
   "files": [
     "src",
     "dist"
   ],
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs/js-ipfs.git"
+  },
   "scripts": {
     "lint": "aegir lint",
     "build": "npm run build:types",

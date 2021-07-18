@@ -1,8 +1,28 @@
 # ipfs-message-port-server <!-- omit in toc -->
 
+[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://protocol.ai)
+[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
+[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
+[![Travis CI](https://flat.badgen.net/travis/ipfs/js-ipfs)](https://travis-ci.com/ipfs/js-ipfs)
+[![Codecov branch](https://img.shields.io/codecov/c/github/ipfs/js-ipfs/master.svg?style=flat-square)](https://codecov.io/gh/ipfs/js-ipfs)
+[![Dependency Status](https://david-dm.org/ipfs/js-ipfs/status.svg?path=packages/ipfs-message-port-server)](https://david-dm.org/ipfs/js-ipfs?path=packages/ipfs-message-port-server)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
+
 > A library for providing IPFS node over [message channel][]. This library enables
 applications running in the different JS context to use [IPFS API](https://github.com/ipfs/js-ipfs/tree/master/docs/core-api) (subset) via `ipfs-message-port-client`.
 
+
+## Lead Maintainer <!-- omit in toc -->
+
+[Alex Potsides](https://github.com/achingbrain)
+
+## Table of Contentens <!-- omit in toc -->
+
+- [Install](#install)
+- [Usage](#usage)
+  - [Notes on Performance](#notes-on-performance)
+- [Contribute](#contribute)
+- [License](#license)
 
 ## Install
 
@@ -50,3 +70,34 @@ const main = async () => {
 
 main()
 ```
+
+
+### Notes on Performance
+
+Since the data sent over the [message channel][] is copied via
+the [structured cloning algorithm][] it may lead to suboptimal
+results (especially with large binary data). In order to avoid unnecessary
+copying the server will transfer all passed [Transferable][]s which will be emptied
+on the server side. This should not be a problem in general as IPFS node itself
+does not retain references to returned values, but is something to keep in mind
+when doing something custom.
+
+
+[message channel]:https://developer.mozilla.org/en-US/docs/Web/API/MessageChannel
+[SharedWorker]:https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker
+[`MessagePort`]:https://developer.mozilla.org/en-US/docs/Web/API/MessagePort
+[structured cloning algorithm]:https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm
+[Transferable]:https://developer.mozilla.org/en-US/docs/Web/API/Transferable
+[Blob]:https://developer.mozilla.org/en-US/docs/Web/API/Blob/Blob
+[File]:https://developer.mozilla.org/en-US/docs/Web/API/File
+
+
+## Contribute
+
+Contributions welcome. Please check out [the issues](https://github.com/ipfs/js-ipfs/issues).
+
+Check out our [contributing document](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md) for more information on how we work, and about contributing in general. Please be aware that all interactions related to this repo are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fipfs%2Fjs-ipfs.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fipfs%2Fjs-ipfs?ref=badge_large)
