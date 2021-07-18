@@ -1,0 +1,8 @@
+* text=auto
+**/test/fixtures/** text eol=lf
+**/test/gateway/** text eol=lf
+**/src/init-files/** text eol=lf
+
+*.data binary
+*.png binary
+*.jpg binary
