@@ -5,10 +5,6 @@
   "keywords": [
     "ipfs"
   ],
-  "homepage": "https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-message-port-protocol#readme",
-  "bugs": "https://github.com/ipfs/js-ipfs/issues",
-  "license": "(Apache-2.0 OR MIT)",
-  "leadMaintainer": "Alex Potsides <alex@achingbrain.net>",
   "files": [
     "src",
     "dist"
@@ -22,10 +18,6 @@
     }
   },
   "browser": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ipfs/js-ipfs.git"
-  },
   "scripts": {
     "test": "aegir test",
     "test:node": "aegir test -t node",
@@ -53,8 +45,5 @@
   "engines": {
     "node": ">=10.3.0",
     "npm": ">=3.0.0"
-  },
-  "contributors": [
-    "Irakli Gozalishvili <dev@gozala.io>"
-  ]
+  }
 }

@@ -2,10 +2,6 @@
   "name": "ipfs-core-utils",
   "version": "0.5.2",
   "description": "Package to share code between ipfs and ipfs-http-client",
-  "author": "Alex Potsides <alex@achingbrain.net>",
-  "homepage": "https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-core-utils#readme",
-  "bugs": "https://github.com/ipfs/js-ipfs/issues",
-  "leadMaintainer": "Alex Potsides <alex@achingbrain.net>",
   "main": "src/index.js",
   "files": [
     "src",
@@ -18,10 +14,6 @@
         "dist/*/index"
       ]
     }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ipfs/js-ipfs.git"
   },
   "scripts": {
     "test": "aegir test",
@@ -36,7 +28,6 @@
     "clean": "rm -rf ./dist",
     "dep-check": "aegir dep-check -i typescript"
   },
-  "license": "MIT",
   "dependencies": {
     "blob-to-it": "^1.0.1",
     "browser-readablestream-to-it": "^1.0.1",
