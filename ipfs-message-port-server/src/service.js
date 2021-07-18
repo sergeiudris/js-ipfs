@@ -1,6 +1,6 @@
 'use strict'
 
-
+/* eslint-env browser */
 
 const { DAGService } = require('./dag')
 const { CoreService } = require('./core')

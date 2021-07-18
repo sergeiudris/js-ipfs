@@ -14,7 +14,7 @@ const Format = {
 }
 
 module.exports = function ({ ipld, resolve, preload }) {
-  return withTimeoutOption(async function * refs (ipfsPath, options = {}) { 
+  return withTimeoutOption(async function * refs (ipfsPath, options = {}) { // eslint-disable-line require-await
     if (options.maxDepth === 0) {
       return
     }
@@ -95,7 +95,7 @@ function formatLink (srcCid, dstCid, linkName, format) {
 }
 
 // Do a depth first search of the DAG, starting from the given root cid
-async function * objectStream (ipld, rootCid, maxDepth, uniqueOnly) { 
+async function * objectStream (ipld, rootCid, maxDepth, uniqueOnly) { // eslint-disable-line require-await
   const seen = new Set()
 
   async function * traverseLevel (parent, depth) {

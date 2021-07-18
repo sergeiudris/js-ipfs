@@ -23,7 +23,7 @@ module.exports = ({ ipns, options: constructorOptions }) => {
    * // Logs: true
    * ```
    */
-  async function cancel (name, options) { 
+  async function cancel (name, options) { // eslint-disable-line require-await
     const pubsub = getPubsubRouting(ipns, constructorOptions)
     return pubsub.cancel(name, options)
   }

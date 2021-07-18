@@ -1,5 +1,5 @@
 'use strict'
-
+/* eslint-env browser */
 
 const MessageTransport = require('./client/transport')
 const BlockClient = require('./block')

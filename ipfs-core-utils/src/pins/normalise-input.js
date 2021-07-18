@@ -29,7 +29,7 @@ const CID = require('cids')
  * @param {Source} input
  * @returns {AsyncIterable<Pin>}
  */
- complexity
+// eslint-disable-next-line complexity
 module.exports = async function * normaliseInput (input) {
   // must give us something
   if (input === null || input === undefined) {

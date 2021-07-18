@@ -36,7 +36,7 @@ module.exports = ({ bitswap }) => {
    * // }
    * ```
    */
-  async function stat (_options) { 
+  async function stat (_options) { // eslint-disable-line require-await
     const snapshot = bitswap.stat().snapshot
 
     return {

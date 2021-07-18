@@ -16,7 +16,7 @@ module.exports = ({ ipns, options: constructorOptions }) => {
    * // Logs: ['/ipns/QmQrX8hka2BtNHa8N8arAq16TCVx5qHcb46c5yPewRycLm']
    * ```
    */
-  async function subs (options) { 
+  async function subs (options) { // eslint-disable-line require-await
     const pubsub = getPubsubRouting(ipns, constructorOptions)
     return pubsub.getSubscriptions(options)
   }

@@ -26,7 +26,7 @@ class IpnsRepublisher {
     this._republishHandle = null
   }
 
-  async start () { 
+  async start () { // eslint-disable-line require-await
     if (this._republishHandle) {
       throw errcode(new Error('republisher is already running'), 'ERR_REPUBLISH_ALREADY_RUNNING')
     }

@@ -25,7 +25,7 @@ module.exports = () => {
    * @param {DNSOptions} [options]
    * @returns {Promise<string>}
    */
-  const resolveDNS = async (domain, options = {}) => { 
+  const resolveDNS = async (domain, options = {}) => { // eslint-disable-line require-await
     if (typeof domain !== 'string') {
       throw new Error('Invalid arguments, domain must be a string')
     }

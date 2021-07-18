@@ -1,4 +1,4 @@
-
+/* eslint-disable complexity */
 'use strict'
 
 const { promisify } = require('util')

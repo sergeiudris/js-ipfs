@@ -360,7 +360,7 @@ function createApi ({
   print,
   repo
 }) {
-  const notStarted = async () => { 
+  const notStarted = async () => { // eslint-disable-line require-await
     throw new NotStartedError()
   }
 
@@ -391,7 +391,7 @@ function createApi ({
     files: Components.files({ ipld, block, blockService, repo, preload, options: constructorOptions }),
     get: Components.get({ ipld, preload }),
     id: Components.id({ peerId }),
-    init: async () => { throw new AlreadyInitializedError() }, 
+    init: async () => { throw new AlreadyInitializedError() }, // eslint-disable-line require-await
     isOnline: Components.isOnline({}),
     key: {
       export: Components.key.export({ keychain }),

@@ -28,7 +28,7 @@ module.exports = ({ bitswap }) => {
    * // []
    * ```
    */
-  async function unwant (cids, options) { 
+  async function unwant (cids, options) { // eslint-disable-line require-await
     if (!Array.isArray(cids)) {
       cids = [cids]
     }

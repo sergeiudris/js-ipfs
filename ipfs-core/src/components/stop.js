@@ -143,7 +143,7 @@ function createApi ({
     { local: Components.refs.local({ repo }) }
   )
 
-  const notStarted = async () => { 
+  const notStarted = async () => { // eslint-disable-line require-await
     throw new NotStartedError()
   }
 
@@ -171,7 +171,7 @@ function createApi ({
     files: Components.files({ ipld, block, blockService, repo, preload, options: constructorOptions }),
     get: Components.get({ ipld, preload }),
     id: Components.id({ peerId }),
-    init: async () => { 
+    init: async () => { // eslint-disable-line require-await
       throw new AlreadyInitializedError()
     },
     isOnline: Components.isOnline({}),

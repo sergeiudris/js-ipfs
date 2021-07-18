@@ -19,7 +19,7 @@ module.exports = ({ bitswap }) => {
    * // [ CID('QmHash') ]
    * ```
    */
-  async function wantlist (options = {}) { 
+  async function wantlist (options = {}) { // eslint-disable-line require-await
     const list = bitswap.getWantlist(options)
 
     return Array.from(list).map(e => e[1].cid)

@@ -14,7 +14,7 @@ module.exports = ({ libp2p, repo }) => {
      * @param {AbortOptions} [options] - The key associated with the value to find
      * @returns {Promise<Uint8Array>}
      */
-    async get (key, options = {}) { 
+    async get (key, options = {}) { // eslint-disable-line require-await
       return libp2p._dht.get(normalizeCID(key), options)
     },
 
@@ -83,7 +83,7 @@ module.exports = ({ libp2p, repo }) => {
      * // '/ip4/147.75.94.115/tcp/4001'
      * ```
      */
-    async findPeer (peerId, options) { 
+    async findPeer (peerId, options) { // eslint-disable-line require-await
       if (typeof peerId === 'string') {
         peerId = PeerId.createFromCID(peerId)
       }

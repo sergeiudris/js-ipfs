@@ -22,7 +22,7 @@ module.exports = ({ peerId, libp2p }) => {
    * console.log(identity)
    * ```
    */
-  async function id (_options) { 
+  async function id (_options) { // eslint-disable-line require-await
     const id = peerId.toB58String()
     let addresses = []
     let protocols = []

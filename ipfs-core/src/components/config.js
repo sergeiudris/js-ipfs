@@ -67,7 +67,7 @@ module.exports = ({ repo }) => {
  * @param {any} _options
  * @returns {Promise<{name:string, description:string}[]>}
  */
-async function listProfiles (_options) { 
+async function listProfiles (_options) { // eslint-disable-line require-await
   return Object.keys(profiles).map(name => ({
     name,
     description: profiles[name].description

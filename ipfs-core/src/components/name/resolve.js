@@ -51,7 +51,7 @@ module.exports = ({ dns, ipns, peerId, isOnline, options: constructorOptions }) 
    * // Logs: /ipfs/QmQrX8hka2BtNHa8N8arAq16TCVx5qHcb46c5yPewRycLm
    * ```
    */
-  async function * resolve (name, options = {}) { 
+  async function * resolve (name, options = {}) { // eslint-disable-line require-await
     options = mergeOptions({
       nocache: false,
       recursive: true
@@ -75,7 +75,7 @@ module.exports = ({ dns, ipns, peerId, isOnline, options: constructorOptions }) 
 
     const [namespace, hash, ...remainder] = name.slice(1).split('/')
     try {
-      new CID(hash) 
+      new CID(hash) // eslint-disable-line no-new
     } catch (err) {
       // lets check if we have a domain ex. /ipns/ipfs.io and resolve with dns
       if (isDomain(hash)) {

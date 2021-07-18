@@ -10,7 +10,7 @@ const toUrlSearchParams = require('../lib/to-url-search-params')
 module.exports = configure((api, options) => {
   const subsTracker = SubscriptionTracker.singleton()
 
-  return async (topic, handler, options = {}) => { 
+  return async (topic, handler, options = {}) => { // eslint-disable-line require-await
     options.signal = subsTracker.subscribe(topic, handler, options.signal)
 
     let done

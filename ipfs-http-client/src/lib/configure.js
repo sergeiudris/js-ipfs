@@ -1,5 +1,5 @@
 'use strict'
-
+/* eslint-env browser */
 
 const Client = require('./core')
 

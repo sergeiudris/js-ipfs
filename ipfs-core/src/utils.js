@@ -1,4 +1,4 @@
-
+/* eslint-disable no-unreachable */
 'use strict'
 
 const isIpfs = require('is-ipfs')
@@ -225,7 +225,7 @@ const mapFile = (file, options = {}) => {
  * @returns {Fn<ARGS, R>}
  */
 function withTimeoutOption (fn, optionsArgIndex) {
-  
+  // eslint-disable-next-line
   return /** @returns {R} */(/** @type {ARGS} */...args) => {
     const options = args[optionsArgIndex == null ? args.length - 1 : optionsArgIndex]
     if (!options || !options.timeout) return fn(...args)
@@ -239,7 +239,7 @@ function withTimeoutOption (fn, optionsArgIndex) {
     options.signal = anySignal([options.signal, controller.signal])
 
     const fnRes = fn(...args)
-     promise/param-names
+    // eslint-disable-next-line promise/param-names
     const timeoutPromise = new Promise((_resolve, reject) => {
       controller.signal.addEventListener('abort', () => {
         reject(new TimeoutError())

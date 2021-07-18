@@ -57,7 +57,7 @@ module.exports = ({ blockService, gcLock, pinManager }) => {
             const pinResult = await pinManager.isPinnedWithType(cid, PinTypes.all)
 
             if (pinResult.pinned) {
-              if (CID.isCID(pinResult.reason)) { 
+              if (CID.isCID(pinResult.reason)) { // eslint-disable-line max-depth
                 throw errCode(new Error(`pinned via ${pinResult.reason}`))
               }
 

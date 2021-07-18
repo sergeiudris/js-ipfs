@@ -54,7 +54,7 @@ module.exports = ({ libp2p }) => {
     try {
       while (true) {
         yield getBandwidthStats(libp2p, options)
-         no-loop-func
+        // eslint-disable-next-line no-loop-func
         await new Promise(resolve => { timeoutId = setTimeout(resolve, interval) })
       }
     } finally {

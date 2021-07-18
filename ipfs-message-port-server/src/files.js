@@ -1,6 +1,6 @@
 'use strict'
 
-
+/* eslint-env browser */
 
 const { encodeCID } = require('ipfs-message-port-protocol/src/cid')
 

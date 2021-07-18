@@ -1,6 +1,6 @@
 'use strict'
 
-
+/* eslint-env browser */
 const { DAGService } = require('./dag')
 exports.DAGService = DAGService
 

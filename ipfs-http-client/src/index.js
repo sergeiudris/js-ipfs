@@ -1,5 +1,5 @@
 'use strict'
-
+/* eslint-env browser */
 
 const CID = require('cids')
 const multiaddr = require('multiaddr')

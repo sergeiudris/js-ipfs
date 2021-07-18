@@ -1,4 +1,4 @@
-
+/* eslint-env browser */
 'use strict'
 
 const { default: PQueue } = require('p-queue')

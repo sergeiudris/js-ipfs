@@ -24,7 +24,7 @@ class OfflineDatastore {
    * @param {Uint8Array} value - value to be stored.
    * @returns {Promise<void>}
    */
-  async put (key, value) { 
+  async put (key, value) { // eslint-disable-line require-await
     if (!(key instanceof Uint8Array)) {
       throw errcode(new Error('Offline datastore key must be a Uint8Array'), 'ERR_INVALID_KEY')
     }
