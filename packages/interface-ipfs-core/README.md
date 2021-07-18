@@ -1,16 +1,6 @@
 # interface-ipfs-core <!-- omit in toc -->
 
-[![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
-[![](https://img.shields.io/badge/freenode-%23ipfs-blue.svg?style=flat-square)](http://webchat.freenode.net/?channels=%23ipfs)
-[![](https://img.shields.io/badge/project-IPFS-blue.svg?style=flat-square)](http://ipfs.io/)
-[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![Dependency Status](https://david-dm.org/ipfs/js-ipfs/status.svg?style=flat-square&path=packages/interface-ipfs-core)](https://david-dm.org/ipfs/js-ipfs?path=packages/interface-ipfs-core)
-
 > A test suite and interface you can use to implement an IPFS core interface.
-
-## Lead Maintainer <!-- omit in toc -->
-
-[Alex Potsides](http://github.com/achingbrain)
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -26,9 +16,6 @@
   - [Running only specific tests](#running-only-specific-tests)
 - [Skipping tests](#skipping-tests)
   - [Skipping specific tests](#skipping-specific-tests)
-- [Contribute](#contribute)
-  - [Want to hack on IPFS?](#want-to-hack-on-ipfs)
-- [License](#license)
 
 ## Background
 
@@ -166,19 +153,3 @@ tests.repo(createCommon, {
   }]
 })
 ```
-
-## Contribute
-
-Feel free to join in. All welcome. Open an [issue](https://github.com/ipfs/js-ipfs/issues)!
-
-This repository falls under the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
-
-### Want to hack on IPFS?
-
-[![](https://cdn.rawgit.com/jbenet/contribute-ipfs-gif/master/img/contribute.gif)](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md)
-
-## License
-
-Copyright (c) Protocol Labs, Inc. under the **MIT License**. See [LICENSE.md](./LICENSE.md) for details.
-
-[UnixFS]: https://github.com/ipfs/specs/tree/master/unixfs

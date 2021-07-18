@@ -3,7 +3,6 @@
   "description": "IPFS quick msg",
   "version": "0.1.1",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "parcel build index.html --public-url '.'",
@@ -11,8 +10,6 @@
     "deploy": "ipfs add -r --quieter dist",
     "test": "test-ipfs-example"
   },
-  "author": "Dmitriy Ryajov <dryajov@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "delay": "^4.4.0",
     "ipfs": "^0.52.1",

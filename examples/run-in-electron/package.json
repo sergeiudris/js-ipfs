@@ -3,7 +3,6 @@
   "description": "A minimal Electron application with js-ipfs",
   "version": "1.0.0",
   "main": "main.js",
-  "private": true,
   "scripts": {
     "start": "electron .",
     "test": "test-ipfs-example"
@@ -13,8 +12,6 @@
     "IPFS",
     "Example"
   ],
-  "author": "David Dias <daviddias@ipfs.io>",
-  "license": "MIT",
   "devDependencies": {
     "electron": "^6.0.0",
     "electron-rebuild": "^1.8.4",

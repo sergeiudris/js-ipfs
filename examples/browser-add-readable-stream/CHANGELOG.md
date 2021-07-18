@@ -30,5 +30,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 The modules available under `ipfs.types.*` have also become static exports.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>

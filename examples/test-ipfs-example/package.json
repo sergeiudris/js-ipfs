@@ -5,7 +5,6 @@
   "bin": {
     "test-ipfs-example": "./test.js"
   },
-  "license": "MIT",
   "dependencies": {
     "chromedriver": "latest",
     "execa": "^4.0.3",

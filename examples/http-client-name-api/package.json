@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "parcel build index.html --public-url '.'",
     "start": "parcel index.html -p 8888",
     "test": "test-ipfs-example"
   },
-  "author": "Tara Vancil <tbvanc@gmail.com>",
-  "license": "MIT",
   "dependencies": {
     "ipfs-http-client": "^48.1.1"
   },

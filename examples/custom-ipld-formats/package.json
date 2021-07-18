@@ -1,11 +1,9 @@
 {
   "name": "example-custom-ipld-formats",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "test": "test-ipfs-example"
   },
-  "license": "MIT",
   "devDependencies": {
     "execa": "^4.0.3",
     "test-ipfs-example": "^2.0.3"

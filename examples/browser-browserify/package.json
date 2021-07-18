@@ -3,7 +3,6 @@
   "description": "Bundle js-ipfs with Browserify",
   "version": "1.1.1",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "bundle": "browserify src/index.js > public/bundle.js",
     "serve": "http-server public -a 127.0.0.1 -p 8888",
@@ -12,7 +11,6 @@
     "test": "test-ipfs-example"
   },
   "keywords": [],
-  "license": "MIT",
   "devDependencies": {
     "browserify": "^16.2.3",
     "concat-stream": "^2.0.0",

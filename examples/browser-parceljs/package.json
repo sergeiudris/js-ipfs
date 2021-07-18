@@ -15,8 +15,6 @@
     "test": "test-ipfs-example"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "ipfs": "^0.52.1"
   },

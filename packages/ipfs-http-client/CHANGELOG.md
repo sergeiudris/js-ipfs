@@ -51,7 +51,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * types returned by `ipfs.files.ls` are now strings, in line with the docs but different to previous behaviour
 
-Co-authored-by: Geoffrey Cohler <g.cohler@computer.org>
 * - CORS origins will need to be [configured manually](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs-http-client/README.md#cors) before use with ipfs-http-client
 
 
@@ -810,8 +809,6 @@ IPLD formats have been updated to the latest versions. IPLD nodes returned by `i
 
 See CHANGELOGs for each IPLD format for it's respective changes, you can read more about the [`dag-pb` changes in the CHANGELOG](https://github.com/ipld/js-ipld-dag-pb/blob/master)
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -945,8 +942,6 @@ The modules available under `ipfs.types.*` have also become static exports.
 
 Finally `ipfs.util.getEndpointConfig` is now a direct instance method, `ipfs.getEndpointConfig`
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -997,9 +992,6 @@ Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 ### BREAKING CHANGES
 
 * All API methods that returned [`big.js`](https://github.com/MikeMcl/big.js/) instances now return [`bignumber.js`](https://github.com/MikeMcl/bignumber.js/) instances.
-
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -1118,8 +1110,6 @@ Now install via `npm install ipfs-http-client`.
 
 Note that in the browser build the object attached to `window` is now `window.IpfsHttpClient`.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 * Object API refactor.
 
@@ -1156,8 +1146,6 @@ This effects the following API methods that return these types of objects:
 
 See https://github.com/ipld/js-ipld-dag-pb/pull/99 for more information.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 * Files API methods `add*`, `cat*`, `get*` have moved from `files` to the root namespace.
 
@@ -1179,8 +1167,6 @@ Additionally, `addFromFs`, `addFromURL`, `addFromStream` have moved from `util` 
 * `ipfs.util.addFromURL` => `ipfs.addFromURL`
 * `ipfs.util.addFromStream` => `ipfs.addFromStream`
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 * Previously `swarm.peers` would throw an uncaught error if any peer in the response could not have its peerId or multiaddr validated.
 
@@ -1191,8 +1177,6 @@ not have a `peer` or `addr` property.
 
 Adds `nock` tests to exercice the code under different error conditions. Doing so uncovered a bug in our legacy go-ipfs <= 0.4.4 peer info parsing, which is also fixed. The code was trying to decapusalate the peerId from the multiaddr, but doing so trims the peerId rather than returning it.
 
-License: MIT
-Signed-off-by: Oli Evans <oli@tableflip.io>
 
 
 <a name="26.1.2"></a>
@@ -1531,9 +1515,6 @@ you need to bundle them yourself.
 ### BREAKING CHANGES
 
 * pubsub.unsubscribe is now async and argument order for pubsub.subscribe has changed
-
-License: MIT
-Signed-off-by: Alan Shaw <alan@tableflip.io>
 
 
 

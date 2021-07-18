@@ -62,8 +62,6 @@ IPLD formats have been updated to the latest versions. IPLD nodes returned by `i
 
 See CHANGELOGs for each IPLD format for it's respective changes, you can read more about the [`dag-pb` changes in the CHANGELOG](https://github.com/ipld/js-ipld-dag-pb/blob/master)
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 * dag-cbor nodes now represent links as CID objects
 
 The API for [dag-cbor](https://github.com/ipld/js-ipld-dag-cbor) changed.

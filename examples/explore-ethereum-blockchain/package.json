@@ -3,12 +3,10 @@
   "description": "Exploring the ethereum blockchain with ipld",
   "version": "1.0.2",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "test-ipfs-example"
   },
   "keywords": [],
-  "license": "MIT",
   "devDependencies": {
     "ipfs": "^0.52.1",
     "ipfs-http-client": "^48.1.1",

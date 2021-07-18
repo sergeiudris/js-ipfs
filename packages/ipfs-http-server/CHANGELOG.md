@@ -41,5 +41,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### BREAKING CHANGES
 
 * types returned by `ipfs.files.ls` are now strings, in line with the docs but different to previous behaviour
-
-Co-authored-by: Geoffrey Cohler <g.cohler@computer.org>

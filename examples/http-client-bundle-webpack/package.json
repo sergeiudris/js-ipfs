@@ -2,15 +2,12 @@
   "name": "example-http-client-bundle-webpack",
   "version": "1.0.0",
   "description": "Bundle js-ipfs-http-client with Webpack",
-  "private": true,
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "webpack",
     "start": "node server.js",
     "test": "test-ipfs-example"
   },
-  "author": "Victor Bjelkholm <victor@ipfs.io>",
-  "license": "MIT",
   "keywords": [],
   "dependencies": {
     "ipfs-http-client": "^48.1.1",

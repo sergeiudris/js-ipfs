@@ -59,9 +59,3 @@ value returned by js-ipfs previously had a `type` property of with a value of
 
     * old: `libp2p.modules.discovery`
     * new: `libp2p.modules.peerDiscovery`
-
-License: MIT
-Signed-off-by: David Dias <mail@daviddias.me>
-
-License: MIT
-Signed-off-by: Alan Shaw <alan@tableflip.io>

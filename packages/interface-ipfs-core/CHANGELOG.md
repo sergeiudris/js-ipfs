@@ -45,9 +45,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * types returned by `ipfs.files.ls` are now strings, in line with the docs but different to previous behaviour
 
-Co-authored-by: Geoffrey Cohler <g.cohler@computer.org>
-
-
 
 
 
@@ -1131,7 +1128,6 @@ in the diff because using `new` stops us from destructuring in js.
 
 * allow passing only to suites with skip lists ([#321](https://github.com/ipfs/interface-ipfs-core/issues/321)) ([c47c4ce](https://github.com/ipfs/interface-ipfs-core/commit/c47c4ce))
 * allow skip with object but no reason ([#318](https://github.com/ipfs/interface-ipfs-core/issues/318)) ([ef91026](https://github.com/ipfs/interface-ipfs-core/commit/ef91026))
-* license ([#312](https://github.com/ipfs/interface-ipfs-core/issues/312)) ([8fa3e98](https://github.com/ipfs/interface-ipfs-core/commit/8fa3e98))
 
 
 
@@ -1172,9 +1168,6 @@ The following other breaking changes have been made:
 3. The `generic` suite (an alias to `miscellaneous`) has been removed.
 
 See https://github.com/ipfs/interface-ipfs-core/pull/290 for more details.
-
-License: MIT
-Signed-off-by: Alan Shaw <alan@tableflip.io>
 
 
 

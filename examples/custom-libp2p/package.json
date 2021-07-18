@@ -3,12 +3,10 @@
   "description": "Customizing your libp2p node",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "start": "node index.js",
     "test": "test-ipfs-example"
   },
-  "license": "MIT",
   "dependencies": {
     "ipfs": "^0.52.1",
     "libp2p": "^0.29.3",

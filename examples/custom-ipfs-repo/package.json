@@ -3,12 +3,10 @@
   "description": "Customizing your ipfs repo",
   "version": "1.0.0",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "start": "node index.js",
     "test": "test-ipfs-example"
   },
-  "license": "MIT",
   "dependencies": {
     "datastore-fs": "^2.0.0",
     "ipfs": "^0.52.1",

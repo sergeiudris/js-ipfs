@@ -57,10 +57,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 Closes https://github.com/ipfs/js-ipfs/issues/3210
 
-Co-authored-by: achingbrain <alex@achingbrain.net>
-* - CORS origins will need to be [configured manually](https://github.com/ipfs/js-ipfs/blob/master/packages/ipfs-http-client/README.md#cors) before use with ipfs-http-client
-
-
 
 
 
@@ -716,10 +712,6 @@ go-ipfs does (return index.html without changing URL)
 
 We also ensure directory URLs always end with '/'
 
-License: MIT
-Signed-off-by: Marcin Rataj <lidel@lidel.org>
-
-
 
 <a name="0.36.4"></a>
 ## [0.36.4](https://github.com/ipfs/js-ipfs/compare/v0.36.3...v0.36.4) (2019-06-18)
@@ -800,8 +792,6 @@ IPLD formats have been updated to the latest versions. IPLD nodes returned by `i
 
 See CHANGELOGs for each IPLD format for it's respective changes, you can read more about the [`dag-pb` changes in the CHANGELOG](https://github.com/ipld/js-ipld-dag-pb/blob/master)
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -850,10 +840,6 @@ Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
     * only `ipld-dag-pb`, `ipld-dag-cbor` and `ipld-raw` included
 * CDN bundle `<script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>`
     * all IPLD formats included
-
-Co-Authored-By: hugomrdias <mail@hugodias.me>
-
-
 
 <a name="0.35.0-rc.6"></a>
 # [0.35.0-rc.6](https://github.com/ipfs/js-ipfs/compare/v0.35.0-rc.5...v0.35.0-rc.6) (2019-04-11)
@@ -984,8 +970,6 @@ Co-Authored-By: hugomrdias <mail@hugodias.me>
 
 The modules available under `ipfs.types.*` have also become static exports.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 * `ipfs.resolve` now supports resolving to the middle of an IPLD block instead of erroring.
 
 Given:
@@ -998,9 +982,6 @@ a = {"b": {"/": cidOf(b) }}
 `ipfs resolve /ipld/cidOf(a)/b/c` should return `/ipld/cidOf(b)/c`. That is, it resolves the path as much as it can.
 
 Previously it would simply fail with an error.
-
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -1105,8 +1086,6 @@ Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 * All API methods that returned [`big.js`](https://github.com/MikeMcl/big.js/) instances now return [`bignumber.js`](https://github.com/MikeMcl/bignumber.js/) instances.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -1200,8 +1179,6 @@ This effects the following API methods that return these types of objects:
 
 See https://github.com/ipld/js-ipld-dag-pb/pull/99 for more information.
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 * Files API methods `add*`, `cat*`, `get*` have moved from `files` to the root namespace.
 
 Specifically, the following changes have been made:
@@ -1216,8 +1193,6 @@ Specifically, the following changes have been made:
 * `ipfs.files.getPullStream` => `ipfs.getPullStream`
 * `ipfs.files.getReadableStream` => `ipfs.getReadableStream`
 
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>
 
 
 
@@ -1556,11 +1531,7 @@ you need to bundle them yourself.
     * old: `libp2p.modules.discovery`
     * new: `libp2p.modules.peerDiscovery`
 
-License: MIT
-Signed-off-by: David Dias <mail@daviddias.me>
 
-License: MIT
-Signed-off-by: Alan Shaw <alan@tableflip.io>
 
 
 

@@ -59,10 +59,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * types returned by `ipfs.files.ls` are now strings, in line with the docs but different to previous behaviour
 
-Co-authored-by: Geoffrey Cohler <g.cohler@computer.org>
 * `Buffer` is no longer exported from core
 * this removes support for SECIO making Noise the only security transport.
 
 Closes https://github.com/ipfs/js-ipfs/issues/3210
-
-Co-authored-by: achingbrain <alex@achingbrain.net>

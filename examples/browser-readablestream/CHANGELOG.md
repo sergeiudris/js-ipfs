@@ -34,6 +34,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * `ipfs.util.isIPFS` and `ipfs.util.crypto` have moved to static exports and should be accessed via `const { isIPFS, crypto } = require('ipfs')`.
 
 The modules available under `ipfs.types.*` have also become static exports.
-
-License: MIT
-Signed-off-by: Alan Shaw <alan.shaw@protocol.ai>

@@ -2,15 +2,12 @@
   "name": "example-http-client-browser-pubsub-example",
   "version": "0.0.0",
   "description": "An example demonstrating pubsub in the browser",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "build": "parcel build index.html --public-url ./",
     "start": "parcel index.html -p 8888",
     "test": "test-ipfs-example"
   },
-  "author": "Alan Shaw",
-  "license": "MIT",
   "dependencies": {
     "ipfs-http-client": "^48.1.1"
   },
