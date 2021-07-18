@@ -7,9 +7,7 @@ const { ipfsPathHelp } = require('../utils')
 const { isTest } = require('ipfs-utils/src/env')
 const debug = require('debug')('ipfs:cli:daemon')
 
-const peernode = require('/ctx/peernode/bin/resources/out/main.js')
-const app = require('/ctx/DeathStarGame/bin/app-node/resources/out/main.js')
-
+const agent = require('/ctx/peernode/bin/resources/out/main.js')
 
 module.exports = {
   command: 'daemon',
@@ -107,8 +105,7 @@ module.exports = {
     }
 
     print('Daemon is ready')
-    peernode.main(daemon)
-    app.main(daemon)
+    agent.main(daemon)
 
 
     const cleanup = async () => {
