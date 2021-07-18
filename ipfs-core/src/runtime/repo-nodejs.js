@@ -18,10 +18,10 @@ module.exports = (options = {}) => {
     if (version !== lastMigration) {
       lastMigration = version
 
-      console.info(`Migrating repo from v${version - 1} to v${version}`) // eslint-disable-line no-console
+      console.info(`Migrating repo from v${version - 1} to v${version}`) 
     }
 
-    console.info(`${percentComplete.toString().padStart(6, ' ')}% ${message}`) // eslint-disable-line no-console
+    console.info(`${percentComplete.toString().padStart(6, ' ')}% ${message}`) 
   }
 
   return new IPFSRepo(repoPath, {

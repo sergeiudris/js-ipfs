@@ -1,4 +1,4 @@
-/* eslint max-nested-callbacks: ["error", 8] */
+
 'use strict'
 
 const CID = require('cids')
@@ -95,7 +95,7 @@ class PinManager {
     return this.repo.pins.put(cidToKey(cid), cbor.encode(pin))
   }
 
-  async unpin (cid) { // eslint-disable-line require-await
+  async unpin (cid) { 
     return this.repo.pins.delete(cidToKey(cid))
   }
 

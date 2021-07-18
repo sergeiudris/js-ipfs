@@ -23,7 +23,7 @@ export type TransferOptions = {
 export type NonUndefined<A> = A extends undefined ? never : A
 
 export type ProcedureNames<T extends Record<string, unknown>> = {
-  [K in keyof T]-?: NonUndefined<T[K]> extends Function ? K : never // eslint-disable-line @typescript-eslint/ban-types
+  [K in keyof T]-?: NonUndefined<T[K]> extends Function ? K : never 
 }[keyof T][]
 
 /**

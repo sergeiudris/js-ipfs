@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-env browser */
+
 
 const Service = require('./client/service')
 

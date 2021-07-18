@@ -86,7 +86,7 @@ class IPNS {
 
   // Initialize keyspace
   // sets the ipns record for the given key to point to an empty directory
-  async initializeKeyspace (privKey, value) { // eslint-disable-line require-await
+  async initializeKeyspace (privKey, value) { 
     return this.publish(privKey, value, IpnsPublisher.defaultRecordLifetime)
   }
 }

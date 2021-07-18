@@ -22,7 +22,7 @@ module.exports = ({ blockService, preload }) => {
    * console.log(block.data)
    * ```
    */
-  async function get (cid, options = {}) { // eslint-disable-line require-await
+  async function get (cid, options = {}) { 
     cid = cleanCid(cid)
 
     if (options.preload !== false) {

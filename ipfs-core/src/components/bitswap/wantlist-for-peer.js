@@ -22,7 +22,7 @@ module.exports = ({ bitswap }) => {
    * // [ CID('QmHash') ]
    * ```
    */
-  async function wantlistForPeer (peerId, options = {}) { // eslint-disable-line require-await
+  async function wantlistForPeer (peerId, options = {}) { 
     const list = bitswap.wantlistForPeer(PeerId.createFromCID(peerId), options)
 
     return Array.from(list).map(e => e[1].cid)

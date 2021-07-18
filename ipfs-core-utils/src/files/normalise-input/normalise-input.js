@@ -11,7 +11,7 @@ const {
   isFileObject
 } = require('./utils')
 
-// eslint-disable-next-line complexity
+ complexity
 
 /**
  * @template {Blob|AsyncIterable<Uint8Array>} Content
@@ -19,7 +19,7 @@ const {
  * @param {(content:ToContent) => Content|Promise<Content>} normaliseContent
  * @returns {AsyncIterable<Entry<Content>>}
  */
-// eslint-disable-next-line complexity
+ complexity
 module.exports = async function * normaliseInput (input, normaliseContent) {
   // must give us something
   if (input === null || input === undefined) {

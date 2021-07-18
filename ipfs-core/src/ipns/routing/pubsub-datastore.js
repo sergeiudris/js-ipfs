@@ -32,7 +32,7 @@ class IpnsPubsubDatastore {
    * @param {Buffer} value - value to be stored.
    * @returns {Promise<void>}
    */
-  async put (key, value) { // eslint-disable-line require-await
+  async put (key, value) { 
     return this._pubsubDs.put(key, value)
   }
 
@@ -114,7 +114,7 @@ class IpnsPubsubDatastore {
    * @param {string} name - ipns path to cancel the pubsub subscription.
    * @returns {Promise<{canceled: boolean}>}
    */
-  async cancel (name) { // eslint-disable-line require-await
+  async cancel (name) { 
     if (typeof name !== 'string') {
       throw errcode(new Error('invalid subscription name'), 'ERR_INVALID_SUBSCRIPTION_NAME')
     }

@@ -1,4 +1,4 @@
-/* eslint max-nested-callbacks: ["error", 8] */
+
 'use strict'
 
 const { resolvePath, withTimeoutOption } = require('../../utils')

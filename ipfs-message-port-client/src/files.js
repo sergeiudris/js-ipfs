@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-env browser */
+
 const Client = require('./client')
 const { decodeCID, CID } = require('ipfs-message-port-protocol/src/cid')
 

@@ -12,7 +12,7 @@ module.exports = async function preload (url, options = {}) {
 
   const res = await HTTP.post(url, { signal: options.signal })
 
-  for await (const _ of res.body) { // eslint-disable-line no-unused-vars
+  for await (const _ of res.body) { 
     // Read to completion but do not cache
   }
 }

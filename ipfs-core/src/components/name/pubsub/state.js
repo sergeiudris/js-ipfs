@@ -15,7 +15,7 @@ module.exports = ({ ipns, options: constructorOptions }) => {
    * // Logs: true
    * ```
    */
-  async function state (_options) { // eslint-disable-line require-await
+  async function state (_options) { 
     try {
       return { enabled: Boolean(getPubsubRouting(ipns, constructorOptions)) }
     } catch (err) {

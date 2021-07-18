@@ -20,7 +20,7 @@ function normalizeMultihash (multihash, enc) {
 }
 
 module.exports = ({ ipld, preload }) => {
-  return withTimeoutOption(async function get (multihash, options = {}) { // eslint-disable-line require-await
+  return withTimeoutOption(async function get (multihash, options = {}) { 
     let mh, cid
 
     try {

@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-env browser */
+
 
 /**
  * @typedef {Error|ErrorData} EncodedError

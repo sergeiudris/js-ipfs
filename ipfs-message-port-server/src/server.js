@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-env browser */
+
 
 const { encodeError } = require('ipfs-message-port-protocol/src/error')
 

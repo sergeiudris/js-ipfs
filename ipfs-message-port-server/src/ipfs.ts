@@ -227,7 +227,7 @@ export interface BlockService {
   ): Promise<{ cid: CID; size: number }>
 }
 
-export interface GetBlockOptions extends AbortOptions { } // eslint-disable-line @typescript-eslint/no-empty-interface
+export interface GetBlockOptions extends AbortOptions { } 
 export interface PutBlockOptions extends AbortOptions {
   format?: string
   mhtype?: string
@@ -244,4 +244,4 @@ export interface RmBlockOptions extends AbortOptions {
   quiet?: boolean
 }
 
-export interface StatBlockOptions extends AbortOptions { } // eslint-disable-line @typescript-eslint/no-empty-interface
+export interface StatBlockOptions extends AbortOptions { } 

@@ -1,6 +1,6 @@
 'use strict'
 
-/* eslint-env browser */
+
 const { encodeError, decodeError } = require('./error')
 
 /**
@@ -177,7 +177,7 @@ const toIterator = iterable => {
  * @returns {RemoteCallback}
  */
 const encodeCallback = (callback, transfer) => {
-  // eslint-disable-next-line no-undef
+   no-undef
   const { port1: port, port2: remote } = new MessageChannel()
   port.onmessage = ({ data }) => callback.apply(null, data)
   transfer.push(remote)

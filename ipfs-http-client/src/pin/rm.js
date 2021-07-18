@@ -8,7 +8,7 @@ module.exports = (options) => {
   const all = rmAll(options)
 
   return configure(() => {
-    return async function rm (path, options = {}) { // eslint-disable-line require-await
+    return async function rm (path, options = {}) { 
       return last(all({
         path,
         ...options

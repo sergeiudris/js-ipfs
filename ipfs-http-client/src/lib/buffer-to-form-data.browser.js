@@ -1,5 +1,5 @@
 'use strict'
-/* eslint-env browser */
+
 
 module.exports = buf => {
   const formData = new FormData()

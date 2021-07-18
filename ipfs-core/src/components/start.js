@@ -220,11 +220,11 @@ function createApi ({
   const addAll = Components.addAll({ block, preload, pin, gcLock, options: constructorOptions })
   const isOnline = Components.isOnline({ libp2p })
 
-  const dhtNotEnabled = async () => { // eslint-disable-line require-await
+  const dhtNotEnabled = async () => { 
     throw new NotEnabledError('dht not enabled')
   }
 
-  const dhtNotEnabledIterator = async function * () { // eslint-disable-line require-await,require-yield
+  const dhtNotEnabledIterator = async function * () { ,require-yield
     throw new NotEnabledError('dht not enabled')
   }
 
@@ -253,7 +253,7 @@ function createApi ({
     { local: Components.refs.local({ repo }) }
   )
 
-  const pubsubNotEnabled = async () => { // eslint-disable-line require-await
+  const pubsubNotEnabled = async () => { 
     throw new NotEnabledError('pubsub not enabled')
   }
 
@@ -292,7 +292,7 @@ function createApi ({
     files,
     get: Components.get({ ipld, preload }),
     id: Components.id({ peerId, libp2p }),
-    init: async () => { throw new AlreadyInitializedError() }, // eslint-disable-line require-await
+    init: async () => { throw new AlreadyInitializedError() }, 
     isOnline,
     ipld,
     key: {
@@ -323,7 +323,7 @@ function createApi ({
       bitswap: Components.bitswap.stat({ bitswap }),
       bw: libp2p.metrics
         ? Components.stats.bw({ libp2p })
-        : async () => { // eslint-disable-line require-await
+        : async () => { 
           throw new NotEnabledError('libp2p metrics not enabled')
         },
       repo: Components.repo.stat({ repo })

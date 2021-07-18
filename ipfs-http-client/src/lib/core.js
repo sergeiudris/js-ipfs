@@ -1,5 +1,5 @@
 'use strict'
-/* eslint-env browser */
+
 const Multiaddr = require('multiaddr')
 const { isBrowser, isWebWorker } = require('ipfs-utils/src/env')
 const parseDuration = require('parse-duration').default

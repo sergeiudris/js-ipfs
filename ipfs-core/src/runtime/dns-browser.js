@@ -1,4 +1,4 @@
-/* eslint-env browser */
+
 'use strict'
 
 const TLRU = require('../utils/tlru')
@@ -21,7 +21,7 @@ const ipfsPath = (response) => {
   throw new Error(response.Message)
 }
 
-module.exports = async (fqdn, opts) => { // eslint-disable-line require-await
+module.exports = async (fqdn, opts) => { 
   const resolveDnslink = async (fqdn, opts = {}) => {
     const searchParams = new URLSearchParams(opts)
     searchParams.set('arg', fqdn)

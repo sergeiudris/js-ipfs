@@ -32,7 +32,7 @@ module.exports = ({ ipld, pin, gcLock, preload }) => {
    * // zBwWX9ecx5F4X54WAjmFLErnBT6ByfNxStr5ovowTL7AhaUR98RWvXPS1V3HqV1qs3r5Ec5ocv7eCdbqYQREXNUfYNuKG
    * ```
    */
-  // eslint-disable-next-line complexity
+   complexity
   async function put (dagNode, options = {}) {
     if (options.cid && (options.format || options.hashAlg)) {
       throw new Error('Can\'t put dag node. Please provide either `cid` OR `format` and `hashAlg` options.')

@@ -10,7 +10,7 @@ module.exports = ({ addAll }) => {
    * @param {AddOptions & AbortOptions} [options]
    * @returns {AddResult}
    */
-  async function add (source, options) { // eslint-disable-line require-await
+  async function add (source, options) { 
     /** @type {UnixFSEntry} - Could be undefined if empty */
     const result = (await last(addAll(source, options)))
     return result

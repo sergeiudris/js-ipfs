@@ -45,7 +45,7 @@ const getDefaultOptions = () => ({
 async function create (options = {}) {
   options = mergeOptions(getDefaultOptions(), options)
 
-  // eslint-disable-next-line no-console
+  
   const print = options.silent ? log : console.log
 
   const apiManager = new ApiManager()
@@ -54,7 +54,7 @@ async function create (options = {}) {
     init: Components.init({ apiManager, print, options }),
     dns: Components.dns(),
     isOnline: Components.isOnline({ libp2p: undefined })
-  }, async () => { throw new NotInitializedError() }) // eslint-disable-line require-await
+  }, async () => { throw new NotInitializedError() }) 
 
   const initializedApi = options.init && await api.init()
   const startedApi = options.start && initializedApi && await initializedApi.start()

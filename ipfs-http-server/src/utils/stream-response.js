@@ -10,7 +10,7 @@ const errorTrailer = 'X-Stream-Error'
 async function streamResponse (request, h, getSource, options = {}) {
   options.objectMode = options.objectMode !== false
 
-  // eslint-disable-next-line no-async-promise-executor
+   no-async-promise-executor
   const stream = await new Promise(async (resolve, reject) => {
     let started = false
     const stream = new PassThrough()
