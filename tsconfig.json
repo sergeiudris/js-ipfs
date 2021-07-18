@@ -63,7 +63,6 @@
   "exclude": [
     "dist",
     "packages/*/dist",
-    "packages/*/test",
     "packages/*/node_modules",
     "node_modules"
   ],
