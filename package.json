@@ -1,7 +1,7 @@
 {
   "name": "js-ipfs",
   "version": "1.0.0",
-  "description": "JavaScript implementation of the IPFS specification",
+  "description": "i am js-ipfs program and library - JavaScript implementation of the IPFS specification",
   "scripts": {
     "postinstall": "lerna bootstrap",
     "link": "lerna link",

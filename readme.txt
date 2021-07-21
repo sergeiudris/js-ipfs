@@ -1,4 +1,4 @@
-i am js-ipfs - IPFS implementation in JavaScript
+i am js-ipfs program and library - IPFS implementation in JavaScript
 
 install me from cli
 
